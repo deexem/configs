@@ -7,7 +7,7 @@ if has("win16") || has("win32")
   set background=light
 else
   set background=dark
-  set backup=off
+  set nobackup
 endif
 " File type specific commands
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
