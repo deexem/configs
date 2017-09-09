@@ -1,18 +1,9 @@
-set writebackup
 if has("win16") || has("win32")
-  set backup
-  set backupdir=C:\WINDOWS\Temp
-  set backupskip=C:\WINDOWS\Temp\\*
-  set directory=C:\WINDOWS\Temp
-  set background=light
+  source $HOME/.vimconfig/windows.vim
 else
-  set background=dark
-  set nobackup
+  source $HOME/.vimconfig/default-system.vim
 endif
 " File type specific commands
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+source $HOME/.vimconfig/filetype-commands.vim
 " General commands
-set ts=2 sts=2 sw=2 expandtab
-set guioptions-=T
-set guioptions-=m
-syntax on
+source $HOME/.vimconfig/general.vim
