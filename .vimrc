@@ -1,3 +1,4 @@
+source $HOME/.vimconfig/vundle.vim
 if has("win16") || has("win32")
   source $HOME/.vimconfig/windows.vim
 else
